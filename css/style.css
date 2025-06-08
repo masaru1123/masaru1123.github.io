@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search][type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted}[type=reset],[type=submit],button,html [type=button]button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}img{max-width: 100%;vertical-align: bottom;}
+
+
+.top-page_header{
+padding: 30px 0;
+text-align: center;
+background: linear-gradient(to bottom, #eff6ff, #b2d9f8);
+> h1{
+width: 200px;
+margin: 0 auto;
+}
+
+}
+
+.btn-wrapper{
+display: flex;
+height: 100px;
+justify-content: center;
+align-items: center;
+gap: 0 40px;
+>button{
+display: block;
+width: 200px;
+border: 2px solid #333;
+padding: 10px 20px;
+&.mixitup-control-active{
+background-color: #333;
+color: #fff;
+}
+}
+}
+
+/* プロフィールセクション */
+.section {
+background: linear-gradient(to bottom, #ffffff, #eaf4ff);
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+padding: 60px 30px;
+margin: 60px auto;
+max-width: 900px;
+text-align: center;
+font-family: 'Kiwi Maru', 'Sawarabi Gothic', sans-serif;
+color: #333;
+p {
+font-size: 18px;
+line-height: 1.8;
+}
+}
+
+.h1 {
+font-size: 32px;
+font-weight: bold;
+margin-bottom: 30px;
+position: relative;
+display: inline-block;
+&::after {
+content: "";
+display: block;
+width: 160px;
+height: 4px;
+background: linear-gradient(to right, #00c3ff, #0078ff);
+border-radius: 2px;
+margin: 10px auto 0;
+}
+}
+
+
+
+
+
+.contents{
+width: 80%;
+margin: 0 auto 100px;
+padding: 30px;
+display: grid;
+grid-template-columns: repeat(3,calc((100% - 80px) / 3));
+gap: 40px;
+min-height: 0;
+overflow: hidden;
+}
+
+.photo-wrapper{
+width: 100%;
+aspect-ratio: 16/9;
+overflow: hidden;
+>img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+transition: 0.2s;
+}
+}
+
+.web .photo-wrapper>img{
+object-fit: contain;
+}
+
+.mix{
+/* border: 1px solid #333; */
+transition-property: box-shadow;
+transition-duration: 0.2s;
+box-shadow: 0 0 0 transparent;
+background-color: #f9fbff;
+border-radius: 20px;
+&:hover{
+box-shadow: 0 0 12px #999;
+scale: 1.1;
+}
+>a{
+display: block;
+color:#333;
+padding: 14px;
+>h2{
+font-size: 22px;
+margin-bottom: 10px;
+
+}
+}
+&:hover img{
+scale: 1.1;
+}
+}
+
+.mix.photo .photo-wrapper > img {
+object-fit: contain;
+}
+
+.skills {
+max-width: 800px;
+margin: 40px auto 60px;
+padding: 30px 20px;
+background: linear-gradient(to bottom, #ffffff, #eef7ff);
+border-radius: 16px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+text-align: center;
+
+.section-title {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 25px;
+color: #222;
+position: relative;
+display: inline-block;
+
+&::after {
+content: "";
+position: absolute;
+bottom: -6px;
+left: 50%;
+transform: translateX(-50%);
+width: 110px;
+height: 3px;
+background: linear-gradient(to right, #00c3ff, #0078ff);
+border-radius: 2px;
+}
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0 auto;
+max-width: 600px;
+
+li {
+font-size: 17px;
+color: #333;
+line-height: 2;
+padding-left: 1.2em;
+text-align: left;
+margin: 0 auto;
+position: relative;
+
+&::before {
+content: "●";
+position: absolute;
+left: 0;
+color: #66b7ff;
+font-size: 0.8em;
+top: 0.4em;
+}
+}
+}
+}
+
+footer {
+background: linear-gradient(to bottom, #dbefff, #f5fbff);
+text-align: center;
+padding: 20px 10px;
+font-size: 0.875rem;
+color: #666;
+margin-top: 80px;
+
+p {
+margin: 0;
+
+small {
+font-family: "Kiwi Maru", "Sawarabi Gothic", sans-serif;
+letter-spacing: 0.5px;
+}
+}
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1024px) {
+.contents {
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+}
+
+.btn-wrapper {
+flex-wrap: wrap;
+height: auto;
+gap: 20px;
+padding: 10px 0;
+}
+
+.btn-wrapper button {
+width: 140px;
+font-size: 0.9rem;
+padding: 8px 16px;
+}
+
+.mix > a > h2 {
+font-size: 18px;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.section {
+padding: 30px 15px;
+margin: 40px 20px;
+}
+
+.h1 {
+font-size: 24px;
+}
+
+.section p {
+font-size: 16px;
+line-height: 1.6;
+}
+
+
+
+.contents {
+grid-template-columns: 1fr;
+gap: 20px;
+width: 70%;
+}
+
+.btn-wrapper {
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.btn-wrapper button {
+width: 100%;
+max-width: 280px;
+font-size: 1rem;
+}
+
+.top-page_header {
+padding: 20px 0;
+}
+
+.mix > a > h2 {
+font-size: 16px;
+text-align: center;
+}
+
+.photo-wrapper {
+aspect-ratio: 4/3;
+}
+
+.skills {
+padding: 20px;
+
+.section-title {
+font-size: 20px;
+&::after {
+width: 60px;
+}
+}
+
+ul li {
+font-size: 15px;
+line-height: 1.8;
+}
+}
+
+footer {
+padding: 15px 5px;
+font-size: 0.75rem;
+}
+
+}
