@@ -6,7 +6,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{backgr
 .container{
 background: linear-gradient(to bottom, #eff6ff, #b2d9f8);
 width: 90%;
-padding: 10px 10px 100px;
+padding: 70px 10px 100px;
 margin: 0 auto;
 border-radius: 20px;
 overflow: visible!important;/* overflow: hidden;を無効にする */
