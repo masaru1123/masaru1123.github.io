@@ -3,71 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Todo</title>
+<title>作品詳細個別ページ</title>
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 <div class="container">
 <header>
-<h1>Simple Todo List</h1>
+<h1>ユーデンやなが善導寺</h1>
 </header>
 <div class="wrapper">
 <div class="text-box">
-<h2>誰でもすぐ使える、シンプルで迷わないToDoアプリ</h2>
-<p class="lead">このアプリは、「開いてすぐに使えること」「操作で迷わないこと」を重視して設計しました。
-機能はできるだけシンプルにし、タイトル・タスク・メモという3つの要素だけに絞っています。
-カテゴリ機能などはあえて設けず、タイトルのみで見分けられるようにすることで、使う人が直感的に管理できるように工夫しました。
-データはローカルストレージに保存され、Light / Darkテーマ切り替えやスマホ表示にも対応しています。</p>
+<h2>地域密着・創業65年の安心・安全な電気工事業者としての信頼感の訴求</h2>
+<p class="lead">福岡県久留米市に実在する個人経営の電気店をモデルに、地域密着型の事業者としての信頼性・実績・親しみやすさを軸に構成したWebサイトです。<br>
+高齢者や一般家庭を主要ターゲットに据え、視認性・操作性に配慮したシンプルで情報が伝わりやすいUI設計を行いました。
+トップページでは業務内容と地域性を明確に打ち出し、ユーザーの導線を意識した構成としています。</p>
 <div class="site-point">
 <h3>制作のポイント</h3>
 <ul>
-<li>ユーザーが開いてすぐ使えることを意識した、シンプルなUI設計</li>
-<li>タイトル・タスク・メモのみの最低限の構成で、操作に迷わない設計</li>
-<li>ローカルストレージを使って、ブラウザ上にデータを保存</li>
-<li>Light / Dark テーマ切り替えが可能</li>
+<li>地元住民に親しまれる「温かみ」と「信頼感」を伝える構成・文体・配色を意識</li>
+<li>写真を大きく使い、視覚的に業務内容が伝わるように設計</li>
+<li>画像をすべてwebpに変換し表示速度を改善しました</li>
+<li>jQueryによるアニメーション（AOS）でサイト全体に動きを加えました</li>
+<li>全ページをレスポンシブ対応し、スマートフォンやタブレットでも快適に閲覧可能にしました</li>
 </ul>
 </div>
 <dl class="site-info">
-<dt>ページ構成（使い方）</dt>
+<dt>ページ構成</dt>
 <dd>
-<span>1.タイトル入力フォーム：To-Doリストのプロジェクト名などを入力し、登録。(+)ボタンを押したらローカルストレージに保存</span>
-<span>2.タスク入力フォーム：タイトル内の個別タスクを入力し、「追加」ボタンで登録</span>
-<span>3.メモ欄：自由記述が可能なテキストエリアで、タスクに関する補足情報やメモの入力に対応</span>
-<span>4.テーマ切り替え：「Light / Dark」のトグルスイッチにより、画面全体のテーマの変更が可能</span>
-<span>5.サイドバー：保存したタイトル一覧が表示され、クリックでそれぞれのタスクが切り替えられる。</span>
+<span>1.トップページ</span>
+<span>2.会社概要</span>
+<span>3.家電・電気工事について</span>
 </dd>
 <dt>使用言語</dt>
 <dd>
-<span>React</span>
-<span>TypeScript</span>
-<span>CSS Modules</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>jQuery</span>          
 </dd>
 <dt>担当作業</dt>
 <dd>
-<span>アプリ構成および画面設計の企画・立案</span>
-<span>React + TypeScript によるフロントエンド実装</span>
-<span>タスク登録・保存機能の実装（ローカルストレージ使用）</span>
-<span>Light / Dark テーマ切り替え対応</span>
+<span>要件定義所の作成</span>
+<span>HTML&CSSコーディング</span>
+<span>JavaScript&jQueryの実装</span>
 </dd>
 <dt>使用プラグイン</dt>
 <dd>
-<span>lucide-react（UIアイコンの表示に使用）</span>
+<span>AOS</span>
 </dd>
 </dl>
 <div class="conclusion">
 <h3>制作を通して学んだこと</h3>
-<p>このToDoアプリの制作を通して、ReactやTypeScriptの基本的な構造に触れることができました。<br>
-一方で、JavaScriptの基礎理解がまだ不十分であることや、データを扱う際にAPI連携やバックエンドの仕組み（Node.js / Express / MySQL）への理解が重要であることも強く実感しました。<br>
-今後はフロントエンドだけでなく、サーバーサイドやデータベース連携にも取り組みながら、より実践的な開発力を身につけていきたいと考えています。</p>
+<p>誰にどのように情報を届けるかを意識し、構成や文章表現を丁寧に考えながら制作を進めました。特に高齢者や一般家庭の方でも迷わず閲覧できるよう、視認性や導線に配慮した設計を心がけました。<br>
+また、レスポンシブ対応やjQueryによる簡単なアニメーションを通じて、閲覧環境に応じた見せ方や、ページ全体の印象を整える重要性を実感しました。</p>
 
 </div><!-- /.conclusion -->
 </div><!-- /.text-box -->
 <div class="screenshot">
-<img src="img/app.png" alt="">
+<img src="img/web-1.png" alt="">
 </div><!-- screenshot -->
 </div><!-- /.wrapper -->
-<a class="to-site" href="https://github.com/masaru1123/my-todo-app" target="_blank">GitHub</a>
-<a class="to-site" href="https://simple-todo-navy-nine.vercel.app" target="_blank">Vercel</a>
+<a class="to-site" href="https://ss026537.stars.ne.jp/uden-yanaga" target="_blank">制作したサイトへ</a>
 <a class="to-top" href="index.html">作品一覧に戻る</a>
 </div><!-- /.container -->
 </body>
