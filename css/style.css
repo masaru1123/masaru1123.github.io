@@ -6,7 +6,6 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{backgr
 .top-page_header{
 padding: 20px 0;
 text-align: center;
-/* background: linear-gradient(to bottom, #eff6ff, #b2d9f8); */
 background: linear-gradient(to right, #1e3c72, #2a5298);
 > h1{
 margin: 0 auto;
@@ -51,7 +50,6 @@ color: #fff;
 
 /* プロフィールセクション */
 .section {
-/* background: linear-gradient(to bottom, #ffffff, #eaf4ff); */
 background: linear-gradient(to bottom, #f7fbff, #e1ecf7);
 border-radius: 12px;
 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -117,7 +115,6 @@ object-fit: contain;
 }
 
 .mix{
-/* border: 1px solid #333; */
 transition-property: box-shadow;
 transition-duration: 0.2s;
 box-shadow: 0 0 0 transparent;
