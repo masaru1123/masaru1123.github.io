@@ -12,19 +12,20 @@ margin: 0 auto;
 color: #fff;
 font-family: 'Poppins', sans-serif;
 font-size: 48px;
+>.title {
+font-size: 42px;
+color: #fff;
+font-weight: 700;
+text-align: center;
+margin: 0 10px 0 0;
+}
 >.name {
 font-size: 18px;
+font-weight: 600;
 color: #ccc;
 text-align: center;
 margin: 0;
 letter-spacing: 1px;
-}
->.title {
-font-size: 36px;
-color: #fff;
-font-weight: 700;
-text-align: center;
-margin: 0;
 }
 }
 }
